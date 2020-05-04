@@ -13,53 +13,24 @@
 <!--表单标签收集用户信息-->
 <!--radio是单选框-->
 <!--action是表单题交的服务器地址 method属性设置提交的方式GET或post-->
-<form action="http://www.biadu.com" method="get">
-    <h1 align="center">用户注册</h1>
-    <table align="center">
-        <input type="hidden" name="action" value="login"/>
-        <tr>
-            <td>用户名称：</td>
-            <td><input type="text" value="默认值"/></td>
-        </tr>
-        <tr>
-            <td>用户密码：</td>
-            <td><input type="password" value="abc"/></td>
-        </tr>
-        <tr>
-            <td>确认密码：</td>
-            <td><input type="password" value="abc"/></td>
-        </tr>
-        <tr>
-            <td>性别：</td>
-            <td><input type="radio" name="sex" checked="checked"/>男
-                <input type="radio" name="sex"/>女
-            </td>
-        </tr>
-        <tr>
-            <td>爱好：</td>
-            <td><input type="checkbox"/>java</td>
-        </tr>
-        <tr>
-            <td>国籍：</td>
-            <td><select>
-                <option>请选择国籍</option>
-                <option selected="selected">中国</option>
-                <option>美国</option>
-                <option>日本</option>
-            </select>
-            </td>
-        </tr>
-        <tr>
-            <td>自我评价：</td>
-            <td><textarea rows="10" cols="20">我才是默认值</textarea></td>
-        </tr>
-        <tr>
-            <td><input type="reset" value="重新填写！"/></td>
-            <td><input type="submit"/></td>
-            <td><input type="button"value="你好啊"/></td>
-            <td><input type="file"></td>
-        </tr>
-    </table>
+<h1 align="center">提交</h1>
+<form action="http://www.biadu.com" method="get" align="center">
+    用户名：<input type="text" name="username"/><br/>
+    密&emsp;码：<input type="password" name="pwd"/><br/>
+    性&emsp;别：<input type="radio" name="gender" value="man" checked="checked"/>男
+    <input type="radio" name="gender" value="women"/>女<br/>
+    爱&emsp;好：<input type="checkbox" name="hobby" value="basketboll" checked="checked"/>篮球
+    <input type="checkbox" name="hobby" value="fottboll"/>足球
+    <input type="checkbox" name="hobby" value="volleyboll"/>排球<br/>
+    喜欢的明星：<select name="star">
+    <option value="fbb">范冰冰</option>
+    <option value="yy">杨颖</option>
+    <option value="zzy">章子怡</option>
+</select>
+    <br/>
+    <br/>
+    <input type="reset">
+    <input type="submit">
 </form>
 </body>
 </html>
